@@ -1,7 +1,37 @@
 :root {
-  --  background-header: #161F49;
-  --light-text:
-  --mainbg: 
-  --main-textc:
+  --background-header: #161F49;
+  --light-text: #FFFF;
+  --mainbg: #FFFFFF;
+  --main-textc: #404040;
+  --button-background: #2468FF;
 }
-.marketing {background-color: var(--background-header);}
+
+body{
+  background-color: var(--mainbg);
+  font-family: Roboto, sans-serif;
+  color:var(--main-textc);
+}
+
+a{ text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+.button{
+  background-color: var(--button-background);
+  color: var(--light-text);
+}
+
+.marketing {
+  background-color: var(--background-header);
+  color: var(--light-text);
+  text-align: center;
+  line-height: calc(23/14);
+  letter-spacing: 0.10998px;
+}
+.container{
+  width: 1440px;
+  margin: 0 auto;
+}
