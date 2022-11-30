@@ -143,7 +143,7 @@ button{
 .amazon-icon{
   margin-bottom: 21px;
 }
-.amazon-btn{
+.amazon-btn,.wifi-btn{
   display: block;
   padding-bottom: 5px;
   margin: 0 auto;
@@ -180,17 +180,110 @@ button{
   border: 1px transparent;
   color: #FFFFFF;
   cursor: pointer;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-border color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .amazon-button:hover,
 .amazon-button:focus{
-background-color: var(--mainbg);
-color:var(--button-background);
-border: 1px solid var(--button-background);
+  background-color: var(--mainbg);
+  color:var(--button-background);
+  border: 1px solid var(--button-background);
 }
 .amazon-thumb{
   margin: 0 auto;
   width: 736px;
 }
+.section-wifi{
+  padding-top: 580px;
+  padding-bottom: 80px;
+  background-image: url(../img/button-min.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.wifi-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 89px;
+  gap: 240px;
+}
+
+.wifi-item {
+  width: 400px;
+}
+.wifi-item:last-child{
+  width: 542px;
+}
+
+.wifi-desckription {
+  display: inline-block;
+  padding: 1px 13px;
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  text-transform: uppercase;
+  background-color: var(--mainbg);
+  color: var(--main-textc);
+  border-radius: 18px;
+}
+
+.wifi-title {
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(44 / 36);
+  color: var(--light-text);
+}
+
+.wifi-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: calc(48/42);
+  color: var(--light-text);
+}
+
+.wifi-work {
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25/18);
+  color: var(--light-text);
+}
+
+.wifi-prace {
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  color: #FFFFFF;
+}
+
+.wifi-button {
+  padding: 17px 70px;
+  
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(14/14);
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  border: 1px transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.wifi-prace-weight{
+  font-weight: 700;
+}
+.wifi-btn {
+  color: var(--light-text);
+  border-color: var(--light-text);
+  text-transform: uppercase;
+  }
