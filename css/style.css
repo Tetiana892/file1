@@ -92,8 +92,7 @@ button{
   text-align: center;
   background-image: url(../img/rectangle.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: top, center;
 }
 .hero-title{
   margin-top: 24px;
@@ -199,8 +198,8 @@ button{
   padding-bottom: 80px;
   background-image: url(../img/button-min.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: cover;
 }
 
 .wifi-list {
@@ -287,3 +286,22 @@ button{
   border-color: var(--light-text);
   text-transform: uppercase;
   }
+.wall-street{
+  background-color: var(--main-textc);
+  padding: 200px;
+  justify-content: center;
+
+}
+.wall-street_title{
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(48 / 42);
+  text-align: center;
+  color: var(--mainbg);
+  text-align: center;
+  justify-content: center;
+  width: 823px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+
+}
