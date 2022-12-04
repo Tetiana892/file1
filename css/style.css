@@ -93,6 +93,7 @@ button{
   background-image: url(../img/rectangle.jpg);
   background-repeat: no-repeat;
   background-position: top, center;
+  position: relative;
 }
 .hero-title{
   margin-top: 24px;
@@ -128,6 +129,13 @@ button{
   border-color: var(--button-background);
   color: var(--button-background);
 }
+.hero-img{
+ position: absolute;
+ right: 50%;
+ bottom: -40px;
+ transform: translate(50%);
+}
+
 
 .amazon-section{
   padding-top: 110px;
@@ -286,22 +294,24 @@ button{
   border-color: var(--light-text);
   text-transform: uppercase;
   }
-.wall-street{
-  background-color: var(--main-textc);
-  padding: 200px;
-  justify-content: center;
 
+.wall-street-section{
+  background-color: var(--main-textc);
+  padding: 200px;  
 }
+
 .wall-street_title{
   font-weight: 700;
   font-size: 42px;
   line-height: calc(48 / 42);
-  text-align: center;
   color: var(--mainbg);
   text-align: center;
-  justify-content: center;
-  width: 823px;
   margin: 0 auto;
+  width: 823px;
   margin-bottom: 49px;
+}
 
+.woll-street_icon{
+  display: block;
+  margin: 0 auto;
 }
