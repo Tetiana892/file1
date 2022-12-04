@@ -209,6 +209,9 @@ button {
   margin: 0 auto;
   width: 736px;
 }
+.amazon-img {
+  margin: 0 auto;
+}
 .section-wifi {
   padding-top: 580px;
   padding-bottom: 80px;
@@ -305,7 +308,7 @@ button {
 
 .wall-street-section {
   background-color: var(--main-textc);
-  padding: 200px;
+  padding: 200px 0;
 }
 
 .wall-street_title {
@@ -313,9 +316,10 @@ button {
   font-size: 42px;
   line-height: calc(48 / 42);
   color: var(--mainbg);
+  width: 868px;
   text-align: center;
   margin: 0 auto;
-  width: 823px;
+
   margin-bottom: 49px;
 }
 
@@ -465,13 +469,12 @@ button {
 }
 .about-title {
   margin-top: 33px;
-  margin-bottom: 17px;
-
   font-weight: 400;
   font-size: 21px;
   line-height: calc(24 / 21);
 }
 .about-text {
+  margin-top: 17px;
   font-size: 18px;
   line-height: calc(25 / 18);
 }
