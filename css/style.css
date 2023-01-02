@@ -40,7 +40,21 @@ button {
 .logo-link {
   padding: 0 36px;
 }
-
+.primary__btn {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: #ffffff;
+  display: block;
+  background: #2468ff;
+  border: none;
+  cursor: pointer;
+}
 .marketing {
   background-color: var(--background-header);
   color: var(--light-text);
@@ -78,6 +92,11 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   border: none;
+}
+.header-btn:hover,
+.header-btn:focus {
+  color: var(--button-background);
+  background-color: var(--background-header);
 }
 .nav-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -172,6 +191,13 @@ button {
   border: none;
   border-bottom: 1px solid var(--main-textc);
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.amazon-btn:hover,
+.amazon-btn:focus {
+  color: var(--button-background);
+  border-color: var(--button-background);
 }
 .amazon-title {
   font-size: 50px;
@@ -185,16 +211,8 @@ button {
 }
 .amazon-button {
   padding: 17px 37px;
-
   font-family: inherit;
-  font-style: normal;
-  font-size: 14px;
-  line-height: calc(14 / 14);
-  letter-spacing: 0.11px;
-  text-transform: uppercase;
   border: 1px transparent;
-  color: #ffffff;
-  cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -284,28 +302,37 @@ button {
 .wifi-button {
   padding: 17px 70px;
 
-  font-family: inherit;
-  font-style: normal;
-  font-size: 14px;
-  line-height: calc(14 / 14);
-  letter-spacing: 0.11px;
-  text-transform: uppercase;
   border: 1px transparent;
-  color: #ffffff;
-  cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.wifi-button:hover,
+.wifi-button:focus {
+  background-color: var(--mainbg);
+  color: var(--button-background);
+  border: 1px solid var(--button-background);
+}
 .wifi-prace-weight {
   font-weight: 700;
 }
+
 .wifi-btn {
-  color: var(--light-text);
-  border-color: var(--light-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
   text-transform: uppercase;
+  border-color: var(--light-text);
+  color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.wifi-btn:hover,
+.wifi-btn:focus {
+  color: var(--button-background);
+  border-color: var(--button-background);
+}
 .wall-street-section {
   background-color: var(--main-textc);
   padding: 200px 0;
@@ -361,20 +388,17 @@ button {
   color: var(--light-text);
 }
 .potantional-btn {
-  display: block;
   padding: 17px 66px 21px 65px;
-  margin: 0 auto;
-  font-family: "Roboto";
-  font-style: normal;
+
   font-weight: 700;
-  font-size: 14px;
-  line-height: calc(14 / 14);
-  text-align: center;
-  letter-spacing: 0.11px;
-  text-transform: uppercase;
-  color: var(--light-text);
-  background-color: var(--button-background);
-  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.potantional-btn:hover,
+.potantional-btn:focus {
+  background-color: var(--mainbg);
+  color: var(--button-background);
 }
 .conectivity-section {
   padding-top: 135px;
@@ -428,21 +452,16 @@ button {
   width: 710px;
 }
 .home-btn {
-  display: block;
-  padding: 17px 23px 17px 21px;
-  margin: 0 auto;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(14 / 14);
+  padding: 17px 43px 21px 43px;
 
-  text-align: center;
-  letter-spacing: 0.11px;
-  text-transform: uppercase;
-  color: var(--light-text);
-  background-color: var(--button-background);
-  border: none;
+  font-weight: 700;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.home-btn:hover,
+.home-btn:focus {
+  background-color: var(--mainbg);
+  color: var(--button-background);
 }
 .home-img {
   margin: 0 auto;
@@ -472,9 +491,9 @@ button {
   font-weight: 400;
   font-size: 21px;
   line-height: calc(24 / 21);
+  margin-bottom: 17px;
 }
 .about-text {
-  margin-top: 17px;
   font-size: 18px;
   line-height: calc(25 / 18);
 }
@@ -486,10 +505,18 @@ button {
   color: var(--main-textc);
   padding-bottom: 5px;
   border-bottom: 1px solid var(--main-textc);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about-btn:hover,
+.about-btn:focus {
+  color: var(--button-background);
+  border-color: var(--button-background);
 }
 .about-icon {
   display: block;
-  margin-right: auto;
+  margin-left: 0;
 }
 
 .hand {
@@ -500,4 +527,164 @@ button {
 }
 .square {
   margin-top: 102px;
+}
+.family-section {
+  padding-top: 117px;
+  padding-bottom: 117px;
+}
+.family__title {
+  margin-bottom: 123px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+
+  text-align: center;
+  color: var(--main-textc);
+}
+.family__wrapper {
+  display: flex;
+  gap: 80px;
+}
+.description__list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 36px;
+}
+
+.description__list-btn {
+  cursor: pointer;
+  padding-bottom: 6px;
+  border: none;
+  border-bottom: 2px solid #dedede;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-transform: uppercase;
+  color: #999999;
+  transition: color 300ms linear, border-color 300ms linear;
+}
+
+.description__list-btn:hover,
+.description__list-btn:focus {
+  color: var(--button-background);
+  border-color: var(--button-background);
+}
+
+.description__text {
+  width: 540px;
+  margin-bottom: 28px;
+
+  font-size: 36px;
+  line-height: calc(52 / 36);
+  color: var(--main-textc);
+}
+.description__about {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  color: var(--secondary-text-color);
+}
+
+.description__thumb {
+  display: block;
+  margin-bottom: 14px;
+}
+.description__btn {
+  padding: 17px 37px 21px 37px;
+  margin-top: 30px;
+  margin-left: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.description__btn:hover,
+.description__btn:focus {
+  background-color: var(--mainbg);
+  color: var(--button-background);
+  border: 1px solid var(--button-background);
+}
+.expert {
+  padding-bottom: 120px;
+}
+.expert__title {
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #404040;
+}
+.expert__text {
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+
+  color: #404040;
+}
+.expert__btn {
+  margin-bottom: 94px;
+  padding: 17px 66px 21px 66px;
+  border: 1px transparent;
+}
+.expert__btn:hover,
+.expert__btn:focus {
+  background-color: var(--mainbg);
+  color: var(--button-background);
+  border: 1px solid var(--button-background);
+}
+.expert__list {
+  display: flex;
+  justify-content: center;
+  gap: 78px;
+}
+.expert__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.connected {
+  padding-top: 111px;
+  padding-bottom: 114px;
+  margin: 0 auto;
+  background-image: url(../img/conected.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+}
+.connected__title {
+  margin: 0 auto;
+  margin-bottom: 83px;
+  width: 596px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  color: var(--mainbg);
+}
+.connected__btn {
+  padding: 17px 37px 21px 37px;
+}
+.connected__btn:hover,
+.connected__btn:focus {
+  background-color: var(--mainbg);
+  color: var(--button-background);
+}
+.footer {
+  background-color: var(--background-header);
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 92px;
+}
+
+.list__links {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
